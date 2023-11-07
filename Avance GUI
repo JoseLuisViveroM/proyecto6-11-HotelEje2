@@ -1,0 +1,75 @@
+import tkinter
+from tkinter import ttk, messagebox
+
+class formulario:
+    def __init__():
+        ventana = tkinter.Tk()
+        ventana.geometry("500x400")
+        ventana. title("FORMULARIO")
+        ventana.configure(bg="ivory2")
+
+        etiFormulario = tkinter.Label(ventana, text="FORMULARIO ")
+        etiFormulario.place(x=200,y=10, width=80, height=30)
+        etiFormulario.config(bg="ivory2")
+
+        etiNombre = tkinter.Label(ventana, text="Nombre: ")
+        etiNombre.place (x=10, y=50)
+        etiNombre.config(bg="ivory2")
+
+        entradaNombre = tkinter.Entry(ventana)
+        entradaNombre.place(x=70, y=50, width=400, height=20)
+
+        etiFecha = tkinter.Label(ventana, text="Fecha: ")
+        etiFecha.place(x=10, y=100)
+        etiFecha.config(bg="ivory2")
+
+        entradaFecha = tkinter.Entry(ventana)
+        entradaFecha.place(x=70, y=100, width=400, height=20)
+
+        etiTipo = tkinter.Label(ventana, text="Tipo de habitacion: ")
+        etiTipo.place(x=10, y=150)
+        etiTipo.config(bg="ivory2")
+
+        entradaTipo = tkinter.Entry(ventana)
+        entradaTipo.place(x=120, y=150, width=350, height=20)
+
+        etiMedioPago = tkinter.Label(ventana, text="Medio de pago: ")
+        etiMedioPago.place(x=10, y=200)
+        etiMedioPago.config(bg="ivory2")
+
+        boxMedioPago = ttk.Combobox(ventana)
+        boxMedioPago.place(x=100, y=200, width=370, height=20)
+
+        etiAbono = tkinter.Label(ventana, text="Abono: ")
+        etiAbono.place(x=10, y=250)
+        etiAbono.config(bg="ivory2")
+
+        entradaAbono = tkinter.Entry(ventana)
+        entradaAbono.place(x=80, y=250, width=390, height=20)
+
+        progreso = ttk.Progressbar()
+        progreso.place(x=10, y=300, width=470, height=20)
+
+        botonContinuar = tkinter.Button(ventana, text="CONTINUAR")
+        botonContinuar.place(x=10, y=360, width=480, height=30)
+        botonContinuar.config(bg="medium blue")
+
+        ventana.mainloop()
+
+class confirmacion:
+     def __init__():
+        ventana = tkinter.Tk()
+        ventana.geometry("400x100")
+        ventana.title("CONFIRMACION")
+        ventana.configure(bg="ivory2")
+
+        etiConf = tkinter.Label(ventana, text=" SU RESERVA FUE EXITOSA ")
+        etiConf.place(x=0, y=0, width=400, height=100)
+        etiConf.config(bg="ivory2")
+
+        ventana.mainloop()
+
+f=formulario
+f.__init__()
+
+c=confirmacion
